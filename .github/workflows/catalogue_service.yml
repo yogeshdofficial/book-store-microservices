@@ -13,11 +13,11 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     env:
-      working-directory: catalogue-service
+      working-directory: catalogue_service
       DOCKER_IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/bookstore-catalog-service
     defaults:
       run:
-        working-directory: catalogue-service
+        working-directory: catalogue_service
     steps:
       - uses: actions/checkout@v4
 

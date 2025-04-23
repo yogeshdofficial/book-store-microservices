@@ -3,7 +3,7 @@ name: Catalog Service
 on:
   push:
     paths:
-      - catalog_service/**
+      - catalogue_service/**
     branches:
       - "main"
   pull_request:
@@ -14,11 +14,11 @@ jobs:
     name: Build
     runs-on: ubuntu-latest
     env:
-      working-directory: catalog-service
+      working-directory: catalogue-service
       DOCKER_IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/bookstore-catalog-service
     defaults:
       run:
-        working-directory: catalog-service
+        working-directory: catalogue-service
     steps:
       - uses: actions/checkout@v4
 

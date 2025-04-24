@@ -1,6 +1,6 @@
 services:
   catalog-service:
-    image: sivaprasadreddy/bookstore-catalog-service
+    image: yogeshdofficial/bookstore_catalogue_service
     container_name: catalogue_service
     environment:
       - DB_URL=jdbc:postgresql://catalogue_db:5432/postgres

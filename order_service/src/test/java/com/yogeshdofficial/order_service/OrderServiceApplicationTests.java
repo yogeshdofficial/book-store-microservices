@@ -1,10 +1,12 @@
-package com.yogeshdofficial.catalogue_service;
+package com.yogeshdofficial.order_service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.annotation.Import;
 
-class CatalogueServiceApplicationTests extends AbstractIT {
+@Import(TestcontainersConfiguration.class)
+@SpringBootTest
+class OrderServiceApplicationTests {
 
 	@Test
 	void contextLoads() {

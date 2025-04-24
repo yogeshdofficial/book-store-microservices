@@ -18,7 +18,7 @@ jobs:
       DOCKER_IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/bookstore-catalog-service
     defaults:
       run:
-        working-directory: catalogue_service
+        working-directory: ${{ env.working-directory }}
     steps:
       - uses: actions/checkout@v4
 

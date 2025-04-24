@@ -26,6 +26,18 @@ jobs:
           distribution: "temurin"
           cache: "maven"
 
+      - name: Verify Java version
+        run: java -version
+
+      - name: Verify Maven version and configuration
+        run: ./mvnw --version
+
+      - name: Verify dependencies
+        run: ./mvnw dependency:tree
+
+      - name: Configure Lombok
+        run: ./mvnw lombok.config
+
       - name: Make Maven wrapper executable
         run: chmod +x mvnw
 

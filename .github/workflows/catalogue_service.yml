@@ -1,9 +1,6 @@
 name: Catalogue Service
 
-on:
-  push:
-    paths:
-      - catalogue_service/**
+on: push
 #     branches:
 #       - "main"
 #   pull_request:

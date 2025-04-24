@@ -29,7 +29,7 @@
 	</scm>
 	<properties>
 		<java.version>21</java.version>
-		<dockerImageName>yogeshdofficial/book-store-${project.artifactId}</dockerImageName>
+		<dockerImageName>yogeshdofficial/book_store_${project.artifactId}</dockerImageName>
 
 	</properties>
 	<dependencies>
